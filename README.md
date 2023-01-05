@@ -1,6 +1,6 @@
-# Mixed Precision Iterative Refinement
+# CMake Universal Template
 
-This repo contains the code associated with the paper: "Mixed Precision Iterative Refinement"
+This repo is a template repo to bootstrap new cmake-based projects that depend on Universal.
 
 # How to build
 
