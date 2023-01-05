@@ -1,4 +1,8 @@
-#include "mpir.hpp"
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+#include <version.hpp>
 
 static const std::string HEADER = "Iterative Improvement with Universal Number Systems";
 
