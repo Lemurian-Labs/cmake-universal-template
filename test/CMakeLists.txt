@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.22)
 set(app_name mpir_tests)
 project(${app_name} C CXX)
 
-add_subdirectory(${MPIR_ROOT_DIR}/ext/googletest gtbuild) 
+add_subdirectory(${MPIR_ROOT_DIR}/ext/google/googletest gtbuild) 
 
 include_directories(${VERSION_INCLUDE_HEADERS_DIR})
-include_directories(${PROJECT_SOURCE_DIR}/ext/googletest/googletest/include)
+include_directories(${PROJECT_SOURCE_DIR}/ext/google/googletest/googletest/include)
 
 set(SOURCE_FILES main.cpp src/mpir_tests.cpp)
 
