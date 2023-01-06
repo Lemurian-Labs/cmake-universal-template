@@ -4,8 +4,6 @@ project(ir)
 add_subdirectory(version)
 # super simple starter skeleton for projects that use the Universal Number System library
 add_subdirectory(universal)
-# more complicated example project that consists of multiple source files
-add_subdirectory(multifile)
 # a purposefull example of a mixed-precision experiment for the quadratic equation
 add_subdirectory(quadratic)
 
