@@ -1,16 +1,25 @@
 # CMake Universal Template
 
 This repo is a template repo to bootstrap new cmake-based projects that depend on Universal.
+It contains gtest and Universal as submodules, and also supports VSCode devcontainers with
+a predefined set of compiler environments for gcc9, gcc10, gcc11, gcc12, clang11, clang12, clang13, and clang14.
 
-# How to build
+# How to clone the repo
 
-This repo uses git submodules. The first step after pulling the repository is to configure the submodules:
+This repo uses git submodules. The first step after pulling the repository for the first time is to configure the submodules:
 
 ```text
 > git submodule init && git submodule update
 ```
 
-After that, the repo is ready to be build:
+When you want to update the submodules you need to request an explicit update:
+```test
+> git submodule update --init --recursive
+```
+
+# How to build
+
+The repo can be build with the standard sequence:
 
 ```text
 > mkdir build
@@ -25,11 +34,11 @@ When using VSCode, the repository contains a devcontainer spec in the directory 
 
 ![VS code environment](img/vscode-devcontainer.png)
 
-The default container provides a build environment based on GCC11:
+The default container provides a build environment based on Clang14:
 
 ```json
 {
-	"image": "stillwater/universal:gcc11builder"
+	"image": "stillwater/universal:clang14builder"
 }
 ```
 There is a set of builders that can be used that contain specific compilers. Other environments are:
